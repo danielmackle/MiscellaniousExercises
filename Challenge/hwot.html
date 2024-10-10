@@ -1,0 +1,449 @@
+<h1>How-To Guide on Using UI.Vision to Control Desktop Apps</h1>
+<p>(With Four Simple, Step-By-Step Examples)</p>
+
+<p>&nbsp;</p>
+
+<h2>In This Guide you Will:</h2>
+<ol>
+  <li>Learn how to use UI.Vision Effectively: <ol>
+      <li>Learn how to Install, Set Up and Use UI.Vision</li>
+      <li>Learn how to Create and Run your first macro</li>
+    </ol>
+  </li>
+  <li>Work Through Example Macros: <ol>
+      <li>
+        <strong>
+          <u>Step-By-Step Example: Windows WordPad</u>
+        </strong>
+      </li>
+      <li>
+        <strong>
+          <u>Example Extension: Windows WordPad with Windows Calculator</u>
+        </strong>
+      </li>
+    </ol>
+  </li>
+  <li>Learn about other useful functions and tools UI.Vision has to offer!</li>
+</ol>
+<p>
+  <em>(More extensive Table of Contents are found at the start of each section.)</em>
+</p>
+
+<p>&nbsp;</p>
+
+<h2>Preface - Daniel Mackle</h2>
+<p>Hello! I have made this guide to introduce people with any or no experience with coding programs or macros to the bright world of automation!</p>
+<p>Because who says you need a screwdriver to make robots? (Not me!)</p>
+<p>If you follow this guide to the very end, you should be able to make small, fun systems which will move your mouse around, click, type and fetch things for you.</p>
+<p>Please enjoy!</p>
+
+<p>&nbsp;</p>
+
+<h2>Table of Contents:</h2>
+<ol>
+  <li>Learn how to use UI.Vision effectively:</li>
+  <ol>
+    <li>What is UI.Vision?</li>
+    <li>Learn how to Install UI.Vision as a browser extension on Google Chrome</li>
+    <li>Learn how to Set up UI.Vision to:</li>
+    <ol>
+      <li>Save and load either locally or on the cloud</li>
+      <li>Be able to control the Desktop</li>
+      <li>Learn how to control UI.Vision</li>
+    </ol>
+    <li>Learn how to Create your first macro to programmatically:</li>
+    <ol>
+      <li>Click on Icons</li>
+      <li>Type into message boxes</li>
+      <li>Take information from the screen</li>
+      <li>Return information</li>
+      <li>Screenshot</li>
+    </ol>
+  </ol>
+  <li>Work Through Example Macros:</li>
+  <ol>
+    <li>
+      <strong>Step-By-Step Example: Windows WordPad</strong>
+    </li>
+    <ol>
+      <li>Open WordPad</li>
+      <li>Type!</li>
+      <li>Save your file</li>
+      <li>Close Wordpad</li>
+    </ol>
+    <li>
+      <strong>Step-By-Step Example: Windows WordPad with Windows Calculator</strong>
+    </li>
+    <ol>
+      <li>Open Calculator from an Icon</li>
+      <li>Give in a sum</li>
+      <li>Get your output</li>
+      <li>Put it onto WordPad</li>
+    </ol>
+  </ol>
+  <li>Learn about other useful functions and tools UI.Vision has to offer!</li>
+  <ol>
+    <li>Learn how to run and save your macros</li>
+    <li>Learn how to use variables &amp; comments in UI.Vision</li>
+    <li>Learn how to take a break!</li>
+    <li>Learn about other useful functions</li>
+  </ol>
+</ol>
+
+<p>&nbsp;</p>
+
+<h2>I. Learn how to use UI.Vision effectively</h2>
+<p>For our first half of this guide, we will focus on UI.Vision, only really using other programs as examples to test our new skills!</p>
+
+<p>&nbsp;</p>
+
+<h3>What is UI.Vision?</h3>
+<p>UI.Vision is a software based on chrome, and runs through chrome as an extension. It is a tool to create programs called macros, which can control chrome, alongside the desktop.</p>
+<p>The desktop-controlling functionality is still in development, but can be used now in the form of an open beta.</p>
+
+<p>&nbsp;</p>
+
+<h2>A. Learn how to Install UI.Vision as a browser extension on Google Chrome</h2>
+<h3>1. Installing Chrome</h3>
+<p>If you do not already have Google Chrome installed, follow this link to go to the install page of Google Chrome:</p>
+<p>
+  <a href="https://www.google.com/intl/en_uk/chrome/">https://www.google.com/intl/en_uk/chrome/</a>
+</p>
+<p>From here, click on the blue link to download the installer, run and follow the on-screen instructions from there.</p>
+
+<p>&nbsp;</p>
+
+<h3>2. Installing UI.Vision</h3>
+<p>
+  <a href="https://chromewebstore.google.com/detail/uivision-rpa/gcbalfbdmfieckjlnblleoemohcganoc">Follow this link to the Chrome Website.</a>
+</p>
+<p>Then click the &ldquo;Add to Chrome&rdquo; button as shown below:</p>
+<p>Then allow UI.Vision to install automatically.</p>
+
+<p>&nbsp;</p>
+
+<h3>3. Opening UI.Vision</h3>
+<p>Open the Extensions tab from any chrome tab as seen below:</p>
+<p>Click on &ldquo;UI.Vision RPA&rdquo; as seen below:</p>
+<p>Then UI.Vision should be opened in a new Window:</p>
+
+<p>&nbsp;</p>
+
+<h2>B. Learn how to Set up UI.Vision to:</h2>
+<h3>1. Save and load either locally or on the cloud</h3>
+<p>Click the drop-down menu in UI.Vision:</p>
+<p>Select whether to save the programs onto the computer&rsquo;s memory or on the cloud.</p>
+<p>(Choose your personal preference)</p>
+<p>Either selection you choose, once in a while you may be prompted to save a .zip file backup of your work. I would recommend saving this file and storing them safely on your computer.</p>
+<p>&nbsp;</p>
+<p>Better safe than sorry!</p>
+
+<p>&nbsp;</p>
+
+<h3>2. Be able to control the Desktop</h3>
+<p>Open the settings menu by clicking the cog icon:</p>
+<p>Click on the &ldquo;Vision&rdquo; tab to open the settings on the Desktop controlling functionality:</p>
+<p>Select &ldquo;Desktop Automation (Search complete desktop) and tick &ldquo;Use native <a href="https://ui.vision/x/idehelp?help=xscreencapture">desktop screen capture (BETA)</a> if installed (see XModule below)&rdquo; </p>
+<p>Now UI.Vision has the functionality to create macros which can manipulate the desktop</p>
+
+<p>&nbsp;</p>
+
+<h2>C. Learn how to create your first macro:</h2>
+<p>UI.Vision functions similarly to a programming language, following lines of code which each perform a function. These lines of code are iterated through like a sequence, and may be controlled by flow control structures like loops.</p>
+<p>Lines of code for this macro consist of up to 4 values, specified through the 4 fields below:</p>
+<p>The Command, the Target, the (sometimes optional) Value and an optional Description.</p>
+<p>Command: There are a limited selection of Commands, each specifying a different function the line of code can represent. <strong>Needed for the line of code function.</strong>
+</p>
+<p>Target: The data input which the Command uses. <strong>Needed for the line of code to function.</strong>
+</p>
+<p>Value: If this field is filled, the output of this line of code is stored in a local variable. Not needed for the line of code to function.</p>
+<p>Description: Works similarly to a comment in conventional coding languages. Data entered into this field has no effect on the macro but helps code readability. Not needed for the line of code to function.</p>
+
+<p>&nbsp;</p>
+
+<h3>1. Clicking on Icons</h3>
+<p>There are three commands to click a point on the screen. These are:</p>
+<ul>
+  <li>XClick</li>
+  <li>XClickRelative</li>
+  <li>XClickText</li>
+  <li>XClickTextRelative</li>
+</ul>
+<p>XClickText clicks on a space with a certain text. (E.g &ldquo;Click Here&rdquo;)</p>
+<p>XClickRelative can give great consistency with clicking places with surroundings which are always the same. (E.G a UI)</p>
+<p>This leaves XClick, which clicks based on the input image alone. (E.G an icon).</p>
+<p>XClickTextRelative is similar to XClickRelative, but with text.</p>
+<p>After choosing the correct command, you need an image or text for the Target field. For XClick / XClickRelative, an image is needed. For XClickText and XClickTextRelative, text is needed.</p>
+<p>The Image can be obtained through clicking the Select button, and selecting the area on your screen to take the image from (similar to how you use the Windows Snipping Tool).</p>
+<p>
+  <strong>
+    <u>VERY IMPORTANT:</u>
+  </strong> If you are ever confused at the syntax or certain tricks and quirks of a command, check the documentation under the &ldquo;Info for this command&rdquo; link.
+</p>
+
+<p>&nbsp;</p>
+
+<h3>2. Type into message boxes</h3>
+<p>To type into a message box, first you must use XClick(Relative) or XClickText(Relative) to click on the message box.</p>
+<p>Secondly, you must use the XType function to type a message into the message box.</p>
+<p>So:</p>
+<p>Command: XType</p>
+<p>Target: [Your text here]</p>
+<p>XType is amazing as it can also be used to trigger hotkeys, which we will focus on more later.</p>
+
+<p>&nbsp;</p>
+
+<h3>3. Take information from the screen</h3>
+<p>To extract data (in the form of text or numbers) from the screen, three commands may be used.</p>
+<p>OCRExtract - Extract from a reference image position. Not too precise.</p>
+<p>OCRExtractRelative - Extract from a reference image position, but uses the surroundings of the image to gain greater precision. Can only be used when the layout is always the same (E.g UIs).</p>
+<p>OCRExtractByTextRelative - Extracts based on surrounding text which is always the same. Can only be used when the layout is always the same (E.g UIs).</p>
+<p>OCRExtract will need image input for the Target field just like XClick(Relative).</p>
+<p>OCRExtractByTextRelative requires text input for the Targetfield just like XClickText.</p>
+<p>
+  <strong>HOWEVER:</strong>
+</p>
+<p>Unlike XClick and XType, OCRExtract requires a variable name to be entered into the Value field. The value Extracted from the screen will be held in this variable, accessed by the name you have given it.</p>
+
+<p>&nbsp;</p>
+
+<h3>4. Return information</h3>
+<p>To return data to be logged in the console, the &lsquo;echo&rsquo; command must be used.</p>
+<p>The value to be returned will be entered into the Target field.</p>
+<p>So:</p>
+<p>Command: echo</p>
+<p>Target: [your data here]</p>
+<h5>
+  <strong>On Variables:</strong>
+</h5>
+<p>To access any variable value in the Target field (whether in echo or XClickText or anything), the following syntax should be used:</p>
+<p>${YourVariable}</p>
+<p>Make sure you use curly brackets {} and not curved brackets ()!</p>
+<p>Some variables are built into UI.Vision, such as:</p>
+<p>${KEY_EXC} Escape Key</p>
+<p>${KEY_WIN} Windows Key</p>
+<p>[All of these can be seen on the documentation for XType under &ldquo;Info for this Command&rdquo;, as explained in I.C.2]</p>
+<p>Thus, you can not name one of your variables the same name as these preset values.</p>
+<p>The name is already taken!</p>
+
+<p>&nbsp;</p>
+
+<h3>5. Screenshot</h3>
+<p>For the last of our basic functions, and the most useful output (in my opinion) is screenshotting.</p>
+<p>There is only one command: captureDesktopScreenshot</p>
+<p>Command: captureDesktopScreenshot</p>
+<p>Target: [the full file directory of the image to be saved]</p>
+<p>AND/OR</p>
+<p>Value: [the name of variable to save image to]</p>
+<p>The full file directory of an image of its total file path to the folder the file is stored in + the file name. E.g: C:\Users\joebloggs\Documents\UIVisionImages\image1.png</p>
+<p>
+  <strong>
+    <u>The screenshotted image will always be a .png file!!!</u>
+  </strong>
+</p>
+
+<p>&nbsp;</p>
+
+
+<h2>
+  <strong>D. Step-By-Step Example: Windows WordPad</strong>
+</h2>
+<h3>1. Open WordPad</h3>
+<p>To run WordPad, we will use the XRun command to open Wordpad.</p>
+<p>The Directory of WordPad is:</p>
+<p>C:\Program Files\Windows NT\Accessories\wordpad.exe</p>
+<p>So:</p>
+<p>Command: XRun</p>
+<p>Target: C:\Program Files\Windows NT\Accessories\wordpad.exe</p>
+
+<p>&nbsp;</p>
+
+<h3>2.Type!</h3>
+<p>Next, we want to type our message into wordpad. But first, there is a problem to solve. Wordpad may take a second to open, so first we will code a break statement.</p>
+<p>This will be covered later in more detail, but for now:</p>
+<p>Command: break</p>
+<p>Target: 1000</p>
+<p>Then:</p>
+<p>Command: XType</p>
+<p>Target: [your message here]</p>
+
+<p>&nbsp;</p>
+
+<h3>3. Save your file</h3>
+<p>To save, we only need three lines:</p>
+<p>Ctrl-S (to open the save menu)</p>
+<p>[wait a second]</p>
+<p>Alt-S (to save)</p>
+<p>So:</p>
+<p>Command: XType</p>
+<p>Target: ${KEY_CTRL}S</p>
+<p>Command: wait</p>
+<p>Target: 1000</p>
+<p>Command XType</p>
+<p>Target: ${KEY_ALT}S</p>
+
+<p>&nbsp;</p>
+
+<h3>4. Close Wordpad</h3>
+<p>We can close WordPad with one last hotkey: ALT-F4</p>
+<p>Command: XType</p>
+<p>Command: ${KEY_ALT}${KEY_F4}</p>
+
+<p>&nbsp;</p>
+
+<h2>
+  <strong>E. Step-By-Step Example: Windows WordPad with Windows Calculator</strong>
+</h2>
+<h3>1. Open Calculator from an Icon</h3>
+<p>We could open calc.exe using XRun as we did before, but let&rsquo;s try using a different method:</p>
+<p>In UI.Vision, with the command XClick, press the Select button.</p>
+<p>Use this button to capture an area of your screen with the calculator icon, something like this:</p>
+<p>Command: XClick</p>
+<p>Target: [image of calculator icon]</p>
+<p>Now, for this command, the macro will click on this icon.</p>
+<p>
+  <strong>
+    <u>Warning!</u>
+  </strong>
+</p>
+<p>Make sure there is only one of the selected icon is present on the screen at once! UI.Vision may click both and cause chaos to your procedure!</p>
+
+<p>&nbsp;</p>
+
+<h3>2. Give in a sum</h3>
+<p>After waiting a second as before:</p>
+<p>Command: break</p>
+<p>Target: 1000</p>
+<p>We will type our sum:</p>
+<p>Command: XType</p>
+<p>Target: 1</p>
+<p>Command: XType</p>
+<p>Target: +</p>
+<p>Command: XType</p>
+<p>Target: 4</p>
+<p>Command: XType</p>
+<p>Target: ${KEY_ENTER}</p>
+
+<p>&nbsp;</p>
+
+<h3>3. Get your output</h3>
+<p>To obtain our output, we will be using OCRExtractRelative.</p>
+<p>&lsquo;Relative&rsquo; commands function above and beyond its non-relative version. They are more precise and reliable, <strong>
+    <u>but can only be used when the surroundings to the selected area are always the same! (E.g a program&rsquo;s UI and not your desktop!)</u>
+  </strong>
+</p>
+<p>&nbsp;</p>
+<p>Relative commands which use images must have additional setup steps:</p>
+<p>Open the &lsquo;Visual&rsquo; tab under the space to code your macro.</p>
+<p>Click the eye icon to open the relative clicks menu. In this menu, you will split the image into two non-overlapping areas. One area is the green Anchor Image area. The other is the pink Click area.</p>
+<p>The click area is where the click will occur. The anchor image is the unchanging area of the UI. You can only make one of each area, so just cover as much applicable area as possible for the anchor image area. On the other hand, the click area should be smaller and more precise.</p>
+<p>The empty Relative Click menu:</p>
+<p>An example of an appropriate Relative Click menu:</p>
+<p>Make sure to save and close after selecting the areas!</p>
+<p>Make sure that the areas don&rsquo;t overlap!</p>
+<p>After setting this image as the Target, select a variable name for the output and put it into the Value field.</p>
+<p>The output number will be saved into this variable. For this example, I will name this variable &ldquo;calc_output&rdquo;</p>
+
+<p>&nbsp;</p>
+
+<h3>4. Put it onto WordPad</h3>
+<p>Open wordPad as before:</p>
+<p>Command: XRun</p>
+<p>Target: C:\Program Files\Windows NT\Accessories\wordpad.exe</p>
+<p>Then type:</p>
+<p>Command: XType</p>
+<p>Target: ${calc_output}</p>
+<p>This will type the output of the sum into wordpad.</p>
+<p>If we didn&rsquo;t have the ${} around the variable name, the variable name would just be typed instead of the value it holds, which is not what we&rsquo;re trying to do.</p>
+
+<p>&nbsp;</p>
+
+<h2>F. Learn how to run and save your macros</h2>
+<p>To run your macros, simply press the &ldquo;Play Macro&rdquo; button.</p>
+<p>The macro will control your mouse and keyboard.</p>
+<p>If you want to stop the macro in its tracks, press Ctrl Alt &amp; Delete at the same time.&nbsp;</p>
+<p>Whether you are storing your macros on the cloud or not, you can save by clicking the save button on the top left of the code editor. This can only be done when you have made a change since the last save.</p>
+<p>Also, the name of your file will be orange and will have an asterisk if you have not saved recently.</p>
+
+<p>&nbsp;</p>
+
+<h2>G. Learn how to use variables &amp; comments in UI.Vision</h2>
+<p>In the Description field, you can enter comments.</p>
+<p>These comments are optional descriptions of your lines of code to help others understand your code, or just to remind you of the functionality of each line.</p>
+<p>These are very useful for larger macros with many lines.</p>
+
+<p>&nbsp;</p>
+
+<h2>H. Learn how to take a break!</h2>
+<p>To go into further detail about the &lsquo;break&rsquo; function:</p>
+<p>The number that goes into the Target field is in milliseconds.</p>
+<p>E.g 1000ms = 1s</p>
+<p>So:</p>
+<p>Command: Break</p>
+<p>Target: [amount of time in ms]</p>
+
+<p>&nbsp;</p>
+
+<h2>I. Quick overlook of other useful functions</h2>
+<p>
+  <em>These following commands are the same as many commands in conventional coding languages. I will include beside them their more conventional parallels.</em>
+</p>
+<p>
+  <em>This section is meant to inform you of the loose functionality of these more specific and complex commands. If you want to look further into these functions, follow the &lsquo;Info for this Command&rsquo; link on the UI.Vision menus.</em>
+</p>
+<p>do &amp; repeatIf</p>
+<p>
+  <em>(parallel to &lsquo;do&hellip;while&rsquo; statements)</em>
+</p>
+<p>Will always run the loopable code once, then will check whether or not to continue looping.</p>
+<p>while</p>
+<p>
+  <em>(parallel to &lsquo;while&rsquo; statements)</em>
+</p>
+<p>Will repeat an amount of lines of code, as long as a statement remains true.</p>
+<p>forEach</p>
+<p>
+  <em>(parallel to &lsquo;for each&rsquo; statements)</em>
+</p>
+<p>Will repeat a block of code for each item in an array, creating a variable holding the value of the array&rsquo;s current index.</p>
+<p>if</p>
+<p>
+  <em>(parallel to &lsquo;if&rsquo; statements)</em>
+</p>
+<p>The basic conditional statement. Runs a block of code if a statement is true.</p>
+<p>else</p>
+<p>
+  <em>(parallel to &lsquo;else&rsquo; statements)</em>
+</p>
+<p>Can only be used directly after an if statement.</p>
+<p>Runs if the conditional statement for the &lsquo;if&rsquo; statement was not met.</p>
+<p>end</p>
+<p>
+  <em>(parallel to methods like &lsquo;System.Exit(0)&rsquo; or &lsquo;Environment.Exit(0)&rsquo; or &lsquo;Exit(0)&rsquo;)</em>
+</p>
+<p>Forcibly the macro, ending the procedure instantly and safely.</p>
+<p>label</p>
+<p>
+  <em>(parallel to labels in low level coding languages)</em>
+</p>
+<p>Names this line of code, so it can be jumped to by the two commands below:</p>
+<p>goToIf</p>
+<p>
+  <em>(parallel to conditional branching statements in low level coding languages)</em>
+</p>
+<p>If a condition is met, the program &lsquo;jumps&rsquo; to a given line, found by its label (see above).</p>
+<p>goToLabel</p>
+<p>
+  <em>(parallel to unconditional branching statements in low level coding languages)</em>
+</p>
+<p>The program always &lsquo;jumps&rsquo; to a given line, found by its label (see above).</p>
+<p>onError</p>
+<p>
+  <em>(parallel to try&hellip;catch statements)</em>
+</p>
+<p>If an error occurs, the program doesn't fail and instead runs a given block of code.</p>
+<p>throwError</p>
+<p>
+  <em>(parallel to throw Exception functionalities)</em>
+</p>
+<p>Artificially makes and throws an error. If an onError statement is not present, this will harmfully end the program.</p>
