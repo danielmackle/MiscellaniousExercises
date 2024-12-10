@@ -20,8 +20,13 @@ public:
         edges->push_back(e);
     }
 
-    Edge<T> *getEdge(Vertex v) const {
-        return &edges[v.getIndex()];
+    Edge<T>* getEdge(int toIndex) const {
+        for (Edge<T>& edge : *edges) {
+            if (edge.getIndexTo() == toIndex) {
+                return &edge;
+            }
+        }
+        return nullptr;
     }
 
     std::vector<Edge<T> > *getEdges() const {
@@ -45,6 +50,6 @@ public:
 
 private:
     T value;
-    int index{};
+    int index;
     std::vector<Edge<T> > *edges = new std::vector<Edge<T> >();
 };

@@ -1,0 +1,3 @@
+C:/Users/danma/OneDrive/Documents/GitHub/MiscellaniousExercises/Assessment2Revision/cmake-build-debug/CMakeFiles/Assessment2Revision.dir
+C:/Users/danma/OneDrive/Documents/GitHub/MiscellaniousExercises/Assessment2Revision/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/danma/OneDrive/Documents/GitHub/MiscellaniousExercises/Assessment2Revision/cmake-build-debug/CMakeFiles/rebuild_cache.dir
